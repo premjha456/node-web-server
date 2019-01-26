@@ -9,7 +9,7 @@ app.use(express.static(__dirname+'/public'));
 
 app.use((req,res,next)=>{
 
-	
+
 })
 
 app.get('/',(req,res)=>{
@@ -31,4 +31,4 @@ app.get('/prem',(req,res)=>{
       res.send('Hello Prem');
 });
 
-app.listen(3000);
+app.listen(3000); 
