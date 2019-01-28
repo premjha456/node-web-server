@@ -30,7 +30,7 @@ MongoClient.connect('mongodb://localhost:27017',{ useNewUrlParser: true },(err,d
     		return console.log('Unable to insert');
     	}
 
-    	console.log(JSON.stringify(result.ops,undefined,2));
+    	console.log(result.ops[0]._id.getTimestamp());
     });
 
 	db.close(); 
